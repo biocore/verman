@@ -243,8 +243,7 @@ class Version(object):
         # Return the directory containing the directory containing the instance
         return os.path.dirname(current_dir_path)
 
-    @classmethod
-    def verman_system_call(cls, cmd):
+    def verman_system_call(self, cmd):
         """Issue a system call
 
         This code is based off of pyqi's pyqi_system_call
