@@ -258,5 +258,5 @@ class Version(object):
         return_value = proc.returncode
         return stdout, stderr, return_value
 
-verman_version = Version("verman", 1, 0, 1)
+verman_version = Version("verman", 1, 1, init_file=__file__)
 __version__ = str(verman_version)
