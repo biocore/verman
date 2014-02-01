@@ -64,5 +64,5 @@ class Version(object):
 
         return "%s(%s)" % (name, ', '.join(items))
 
-verman_version = Version("verman", 1, 0)
+verman_version = Version("verman", 1, 0, 1)
 __version__ = str(verman_version)

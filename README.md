@@ -7,6 +7,6 @@ This module provides a light object for describing package version information. 
 
 ```python
 from verman import Version
-verman_version = Version(1, 0)
+verman_version = Version('verman', 1, 0, 1)
 __version__ = str(verman_version)
 ```
