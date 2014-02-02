@@ -8,5 +8,5 @@ This module provides a light object for describing package version information. 
 ```python
 from verman import Version
 verman_version = Version('verman', 1, 1, init_file=__file__)
-__version__ = str(verman_version)
+__version__ = verman_version.mmm
 ```

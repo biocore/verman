@@ -44,6 +44,14 @@ class Version(object):
         self.releaselevel = releaselevel
         self.init_file = init_file
 
+    @property
+    def mmm(self):
+        """major.minor.micro version string"""
+        if self.micro is None:
+            return "%d.%d" % (self.major, self.minor)
+        else:
+            return "%d.%d.%d" % (self.major, self.minor, self.micro)
+
     def __str__(self):
         """Return a version string"""
         if self.micro is None:
@@ -258,4 +266,4 @@ class Version(object):
         return stdout, stderr, return_value
 
 verman_version = Version("verman", 1, 1, init_file=__file__)
-__version__ = str(verman_version)
+__version__ = verman_version.mmm
