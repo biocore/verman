@@ -13,7 +13,7 @@ __license__ = 'BSD'
 
 from verman import verman_version
 
-__version__ = str(verman_version)
+__version__ = verman_version.mmm
 
 from setuptools import setup
 import sys
