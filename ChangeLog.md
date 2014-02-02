@@ -1,6 +1,11 @@
 verman ChangeLog
 ==============
 
+verman 1.1.1
+------------
+
+* verman is now under biocore
+
 verman 1.1
 ----------
 
